@@ -1,19 +1,31 @@
-# TradeTally
+# TradeTally marketing site
 
-**Invoicing & tax software for UK sole traders.**
-
-TradeTally is an invoicing and tax management platform designed specifically for UK sole traders and self-employed professionals. Track income, create professional invoices in seconds, and automatically calculate your Self Assessment tax return.
+Invoicing and expense tracking for UK sole traders — marketing homepage and pricing.
 
 → **[tradetally.co.uk](https://tradetally.co.uk)**
 
-## Features
+## Conversion redesign
 
-- Professional invoicing in seconds
-- Expense tracking and categorisation
-- Automatic Self Assessment tax calculations
-- UK MTD (Making Tax Digital) compliant
-- No accounting jargon — built for tradespeople
+This package implements the marketing conversion redesign:
 
-## Links
+- Homepage hero with outcome headline, primary/secondary CTAs, risk microcopy and objection chips
+- Product-truthful Starter vs Professional plans (no Direct HMRC submission claims)
+- Featured Professional plan contrast and honesty note (exports only — does not submit SA/MTD)
+- Consistent primary CTA: **Start 14-day Pro trial**
 
-- Website: [tradetally.co.uk](https://tradetally.co.uk)
+Shared product facts live in `src/lib/product-truth.ts`.
+
+## Develop
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+```
+
+## Note on repository scope
+
+The public `SimaTiools/tradetally` GitHub repository previously held only docs/wiki. The live product app is hosted separately. This branch adds an App Router marketing package (`src/app/page.tsx`, `src/app/_home-client.tsx`, `src/app/pricing/page.tsx`) so the conversion redesign can ship as a reviewable PR and be ported into the production app.
